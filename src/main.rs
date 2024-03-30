@@ -130,9 +130,23 @@ fn init_config() -> Result<Option<Config>, Box<dyn Error>> {
         ..ColorfulTheme::default()
     };
 
-    println!("\n\n{} Docs Template\n", style("TSConfig").blue());
+    let ascii_art = r#"
+   $$$$$$$$\ $$$$$$\          $$\                                   $$\          $$\                       
+   \__$$  __$$  __$$\         $$ |                                  $$ |         $$ |                      
+      $$ |  $$ /  \__|      $$$$$$\   $$$$$$\ $$$$$$\$$$$\  $$$$$$\ $$ |$$$$$$\$$$$$$\   $$$$$$\  $$$$$$$\ 
+      $$ |  \$$$$$$\        \_$$  _| $$  __$$\$$  _$$  _$$\$$  __$$\$$ |\____$$\_$$  _| $$  __$$\$$  _____|
+      $$ |   \____$$\         $$ |   $$$$$$$$ $$ / $$ / $$ $$ /  $$ $$ |$$$$$$$ |$$ |   $$$$$$$$ \$$$$$$\  
+      $$ |  $$\   $$ |        $$ |$$\$$   ____$$ | $$ | $$ $$ |  $$ $$ $$  __$$ |$$ |$$\$$   ____|\____$$\ 
+      $$ |  \$$$$$$  |        \$$$$  \$$$$$$$\$$ | $$ | $$ $$$$$$$  $$ \$$$$$$$ |\$$$$  \$$$$$$$\$$$$$$$  |
+      \__|   \______/          \____/ \_______\__| \__| \__$$  ____/\__|\_______| \____/ \_______\_______/ 
+                                                           $$ |                                            
+                                                           \__|                                            
+"#;
 
-    //TODO: maybe implements a dinamic template version
+
+    println!("{}", style(ascii_art).blue());
+
+    //TODO: implements a dinamic template version
     let template = Select::with_theme(&theme)
         .with_prompt("Choose a template")
         .default(0)
