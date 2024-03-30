@@ -81,14 +81,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "01cda141df6706de531b6c46c3a33ecca755538219bd484262fa09410c13539c"
 
 [[package]]
-name = "oi"
-version = "0.1.0"
-dependencies = [
- "console",
- "dialoguer",
-]
-
-[[package]]
 name = "proc-macro2"
 version = "1.0.79"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -166,6 +158,14 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn",
+]
+
+[[package]]
+name = "ts-config-generator"
+version = "0.1.1"
+dependencies = [
+ "console",
+ "dialoguer",
 ]
 
 [[package]]
