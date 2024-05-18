@@ -1,3 +1,20 @@
+<h1 align="center">
+  <a href='#'><img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png" width="600px"/></a>
+  <br>
+  <br>
+  <div>
+    <a href="https://github.com/marcelldac/GameRave/issues">
+      <img src="https://img.shields.io/github/issues/marcelldac/GameRave?color=fab387&labelColor=303446&style=for-the-badge">
+    </a>
+    <a href="https://github.com/marcelldac/GameRave/stargazers">
+      <img src="https://img.shields.io/github/stars/marcelldac/GameRave?color=ca9ee6&labelColor=303446&style=for-the-badge">
+    </a>
+    <a href="https://github.com/marcelldac/GameRave">
+      <img src="https://img.shields.io/github/repo-size/marcelldac/GameRave?color=ea999c&labelColor=303446&style=for-the-badge">
+    </a>
+  </div>
+</h1>
+
 # TypeScript Config Generator
 
 Welcome to the **TypeScript Config Generator**! This repository contains a simple yet powerful command-line tool designed to help you quickly generate `tsconfig.json` files tailored to various environments and setups.
